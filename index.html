@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="blue-grey lighten-4">
+   <div class="container my-container">
+      <div class="row">
+         <div class="col s12">
+            <h1 class="header">CSS Generator</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col s4">
+            <ul class="collapsible ">
+               <li>
+                  <div class="collapsible-header black yellow-text text-lighten-5"><i class="material-icons">filter_vintage</i>Size
+                  </div>
+                  <div class="collapsible-body grey lighten-3">
+                     <form action="#">
+                        <p>Width:</p>
+                        <p class="range-field">
+                           <input type="range" id="rangeWidth" min="10" max="450" value="100" />
+                        </p>
+                        <p>Height:</p>
+                        <p class="range-field">
+                           <input type="range" id="rangeHeight" value="100" min="10" max="450" />
+                        </p>
+                     </form>
+
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header black yellow-text text-lighten-5"><i
+                        class="material-icons">filter_vintage</i>Border</div>
+                  <div class="collapsible-body grey lighten-3">
+                     <form action="#">
+                        <p class="padding">Style:</p>
+                        <select id="borderStyleSelect">
+                           <option value="solid" selected>solid</option>
+                           <option value="dotted">dotted</option>
+                           <option value="double">double</option>
+                           <option value="groove">groove</option>
+                           <option value="dashed">dashed</option>
+                           <option value="ridge">ridge</option>
+
+                        </select>
+                        <div class="check-flex">
+                           <p>
+                              <label>
+                                 <input id="btop" class="checkbox " type="checkbox" checked />
+                                 <span>Top</span>
+                              </label>
+                           </p>
+                           <p>
+                              <label>
+                                 <input id="bright" type="checkbox" checked />
+                                 <span>Right</span>
+                              </label>
+                           </p>
+                           <p>
+                              <label>
+                                 <input id="bbottom" type="checkbox" checked />
+                                 <span>Bottom</span>
+                              </label>
+                           </p>
+                           <p>
+                              <label>
+                                 <input id="bleft" type="checkbox" checked />
+                                 <span>Left</span>
+                              </label>
+                           </p>
+                        </div>
+                        <p class="padding">Width:</p>
+                        <p class="range-field">
+                           <input class="padding" type="range" id="rangeBorderWidth" min="0" max="30" value="0" />
+                        </p>
+
+                        <label>Materialize Select</label>
+                        <p class="padding">Color:</p>
+                        <p> R:</p>
+                        <p class="range-field">
+                           <input class="padding" type="range" id="rangeR" value="220" min="0" max="255" />
+                        </p>
+                        <p> G:</p>
+                        <p class="range-field">
+                           <input class="padding" type="range" id="rangeG" value="220" min="0" max="255" />
+                        </p>
+                        <p>B:</p>
+                        <p class="range-field">
+                           <input class="padding" type="range" id="rangeB" value="220" min="0" max="255" />
+                        </p>
+                        <p class="padding">Radius(%):</p>
+                        <p class="range-field">
+                           <input class="padding" type="range" id="rangeRadius" value="0" min="0" max="50" />
+                        </p>
+                     </form>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header black yellow-text text-lighten-5"><i
+                        class="material-icons">filter_vintage</i>Inner Text
+                  </div>
+                  <div class="collapsible-body grey lighten-3">
+                     <div class="row">
+                        <form class="col s12">
+                           <div class="row">
+                              <div class="input-field col s12">
+                                 <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                 <label for="textarea1">Type some text here</label>
+                                 <p class="range-field">
+                                    <label>
+                                       <p>Font size:</p><input class="padding" type="range" id="fontSizeRange"
+                                          value="15" min="10" max="100" />
+                                    </label>
+                                 </p>
+
+
+
+                                 <p class="range-field">
+                                    <label>
+                                       <p>Font weight:</p><input class="padding" type="range" id="fontWeightRange"
+                                          step="100" value="300" min="100" max="900" />
+                                    </label>
+                                 </p>
+                                 <p class="padding">Font family:</p>
+                                 <select id="fontStyleSelect">
+                                    <option value="unset" selected>unset</option>
+                                    <option value="Gill Sans">Gill Sans</option>
+                                    <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+                                    <option value="Lucida Sans">Lucida Sans</option>
+                                    <option value="Segoe UI">Segoe UI</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                    <option value="Arial">Arial</option>
+                                    <option value="fantasy">fantasy</option>
+                                    <option value="cursive">cursive</option>
+                                 </select>
+                                 <p class="padding">Color:</p>
+                                 <p>R:</p>
+                                 <p class="range-field">
+                                    <input class="padding" type="range" id="rangeFontR" value="20" min="0" max="255" />
+                                 </p>
+                                 <p> G:</p>
+                                 <p class="range-field">
+                                    <input class="padding" type="range" id="rangeFontG" value="20" min="0" max="255" />
+                                 </p>
+                                 <p>B:</p>
+                                 <p class="range-field">
+                                    <input class="padding" type="range" id="rangeFontB" value="20" min="0" max="255" />
+                                 </p>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header black yellow-text text-lighten-5"><i
+                        class="material-icons">filter_vintage</i>Background
+                  </div>
+                  <div class="collapsible-body grey lighten-3">
+                     <div class="row">
+                        <form class="col s12">
+                           <div class="row">
+                              <div class="input-field col s12">
+
+                                 <div class="check-flex">
+                                    <p>
+                                       <label>
+                                          <input id="gradientCheck" class="checkbox" type="checkbox" />
+                                          <span>Gradient</span><br><br>
+                                       </label>
+                                    </p>
+                                 </div>
+
+                                 <div id="nonGradient">
+                                    <p class="padding">Background color:</p>
+                                    <p>R:</p>
+                                    <p class="range-field">
+                                       <input class="padding" type="range" id="rangeBgR" value="255" min="0"
+                                          max="255" />
+                                    </p>
+                                    <p>G:</p>
+                                    <p class="range-field">
+                                       <input class="padding" type="range" id="rangeBgG" value="255" min="0"
+                                          max="255" />
+                                    </p>
+                                    <p> B:</p>
+                                    <p class="range-field">
+                                       <input class="padding" type="range" id="rangeBgB" value="255" min="0"
+                                          max="255" />
+                                    </p>
+                                 </div>
+                                 <div id="gradient">
+                                    <div style="display: flex; flex-direction: column; " class="check-flex">
+                                       <p style="width: 100%;">
+                                          <label>
+                                             <input id="topToBottom" name="group1" type="radio" checked />
+                                             <span>Top to bottom</span>
+                                          </label>
+                                       </p>
+                                       <p style="width: 100%;">
+                                          <label>
+                                             <input id="leftToRight" name="group1" type="radio" />
+                                             <span>Left to right</span>
+                                          </label>
+                                       </p>
+                                       <p style="width: 100%;">
+                                          <label>
+                                             <input id="leftLeftToBottomRight" name="group1" type="radio" />
+                                             <span>Top left to bottom right</span>
+                                          </label>
+                                       </p>
+                                       <p style="width: 100%;">
+                                          <label>
+                                             <input id="repeatingGradient" name="group1" type="radio" />
+                                             <span>Radial gradient</span>
+                                          </label>
+                                       </p>
+
+                                    </div>
+                                    <p>R:</p>
+                                    <p class="range-field">
+                                       <input class="padding" type="range" id="rangeGradientBgR" value="255" min="0"
+                                          max="255" />
+                                    </p>
+                                    <p> G:</p>
+                                    <p class="range-field">
+                                       <input class="padding" type="range" id="rangeGradientBgG" value="255" min="0"
+                                          max="255" />
+                                    </p>
+                                    <p>B:</p>
+                                    <p class="range-field">
+                                       <input class="padding" type="range" id="rangeGradientBgB" value="255" min="0"
+                                          max="255" />
+                                    </p>
+                                    </p>
+                                    <div class="input-field col s12">
+
+                                       <div>
+                                          <div id="colorExample"></div>
+                                          <div class="btns">
+                                             <a id="btnAdd" class="waves-effect waves-light btn">Add</a>
+
+                                             <a id="colorReset" class="waves-effect waves-light btn">Reset</a>
+                                          </div>
+                                       </div>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </form>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header black yellow-text text-lighten-5"><i class="material-icons">filter_vintage</i>Flex
+                     & adding blocks
+                  </div>
+                  <div class="collapsible-body grey lighten-3">
+                     <form action="#">
+                        <a class="waves-effect waves-light btn" id="btnAddBlock">Add block</a>
+                        <a class="waves-effect waves-light btn" id="btnRemoveBlock">Remove</a>
+                        <br><br>
+
+                        <p class="padding">Flex-wrap:</p>
+                        <select id="flexWrap">
+                           <option value="nowrap" selected>nowrap</option>
+                           <option value="wrap">wrap</option>
+                           <option value="wrap-reverse">wrap-reverse</option>
+                        </select>
+                        <br>
+                        <p class="padding">Flex-direction:</p>
+                        <select id="flexDirection">
+                           <option value="row" selected>row</option>
+                           <option value="row-reverse">row-reverse</option>
+                           <option value="column">column</option>
+                           <option value="column-reverse">column-reverse</option>
+                        </select>
+                        <br>
+                        <p class="padding">Justify-content:</p>
+                        <select id="justifyContent">
+                           <option value="flex-start" selected>flex-start</option>
+                           <option value="flex-end">flex-end</option>
+                           <option value="center">center</option>
+                           <option value="space-between">space-between</option>
+                           <option value="space-around">space-around</option>
+                           <option value="space-evenly">space-evenly</option>
+                           <option value="start">start</option>
+                           <option value="end">end</option>
+                           <option value="left">left</option>
+                           <option value="right">right</option>
+                        </select>
+                        <br>
+                        <p class="padding">Align-items:</p>
+                        <select id="alignItems">
+                           <option value="stretch" selected>stretch</option>
+                           <option value="flex-start">flex-start</option>
+                           <option value="flex-end">flex-end </option>
+                           <option value="center">center</option>
+                           <option value="baseline">baseline</option>
+                        </select>
+                     </form>
+
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div  class="col s8 sticky">
+            <div class="card working-area working-area-flex grey lighten-3" id="flexibleBlockArea">
+               <div id="flexible" class="flexible"></div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col s12">
+            <div class="card black">
+               <a class="waves-effect waves-light btn" id="btnCopy">Copy</a>
+               <p id="cssCode"></p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
